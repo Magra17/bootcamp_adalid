@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <title>Estadísticas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+        <h1>Te Lo Vendo</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="abpro6.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-white" href="#">Cuerdas</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Accesorios</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Percusión</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Teclados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Seguimiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estadisticas.html">Estadísticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid p-4">
+        <section class="row">
+            <div class="col-12">
+                <h2 class="fw-bold">Estadísticas sobre la música chilena</h2>
+            </div>
+            <p>
+                En ¡Te lo Vendo! nos encanta la música pero también los números (!), es por eso que creamos esta
+                sección para dejar las estadísticas y números de la música chilena. Si quieres dejarnos un feedback
+                o que añadamos una lista, escríbenos en nuestra sección de <a href="contacto.html">Contacto</a> .
+            </p>
+
+
+
+
+            <div Class="col-12 col-sm-6">
+                <h3 class="text-muted" >Canciones más escuchadas en la radio en el 2021</h3>
+                <p>
+                    En el informe anual de la Sociedad Chilena de Autores e Intérpretes Musicales (SCD) nos enteramos de
+                    cuáles son las canciones criollas que más suenan en las radios. No fue de extrañarnos que la
+                    cantautora Mon Laferte liderara el top 10 con tres de sus canciones, considerando que en los años
+                    2017, 2018 y 2019 también estuvo en la parte superior de las listas.
+                    Este estudio se hace a partir de las canciones reproducidas en 300 emisoras radiales a los largo del
+                    territorio.
+                    <b>Fuente:</b> <a
+                        href="https://www2.scd.cl/canciones-chilenas-mas-escuchadas-en-2021-mon-laferte-retoma-el-liderazgo-en-las-radios-locales/">SCD</a>
+                </p>
+            </div>
+            <div Class="col-12 col-sm-6 d-flex justify-content-center ">
+                <img class=" logo" src="img/logo.png" alt="logo">
+            </div>
+            <div>
+                <table id="table_id" class="display table">
+                    <thead>
+                        <tr class="table-dark">
+                            <th>Posición</th>
+                            <th>Canción</th>
+                            <th>Artista</th>
+                            <th>Género</th>
+                            <th>Reproducciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Tu falta de querer</td>
+                            <td>Mon Laferte</td>
+                            <td>Pop</td>
+                            <td>43.029</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Me enamoré de ti</td>
+                            <td>Iván Alejandro</td>
+                            <td>Pop</td>
+                            <td>36.948</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Amárrame ft. Juanes</td>
+                            <td>Mon Laferte</td>
+                            <td>Pop</td>
+                            <td>31.835</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Algún día volverás</td>
+                            <td>Santaferia</td>
+                            <td>Música tropical</td>
+                            <td>31.808</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Quiero verte más</td>
+                            <td>Francisca Valenzuela</td>
+                            <td>Pop</td>
+                            <td>31.493</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Tiene sabor</td>
+                            <td>Denise Rosenthal</td>
+                            <td>Pop</td>
+                            <td>31.297</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Sube a nacer conmigo hermano</td>
+                            <td>Los Jaivas</td>
+                            <td>Folk rock</td>
+                            <td>31.209</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Aquí estoy</td>
+                            <td>Cami</td>
+                            <td>Pop</td>
+                            <td>30.834</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>El beso</td>
+                            <td>Mon Laferte</td>
+                            <td>Pop</td>
+                            <td>30.771</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Fruta y té</td>
+                            <td>Gepe</td>
+                            <td>Indie pop</td>
+                            <td>30.517</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="fw-bold">
+            <b>Equipo 5 Año 2022</b>
+        </p>
+        <p>Andrea Carreño | María González | Rodrigo Mendoza | Manuel Herrada</p>
+    </footer>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- DATATABLE -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js">
+    </script>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <script src="jquery.js"></script>
+
+</body>
+
+</html>
